@@ -6,29 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="calculator">
-        <div class=”calculator__display”>000000000000000000000000</div>
-        <button data-action="calculator__on">on</button>
-        <button data-action="calculator__on">off</button>
-        <button class="calculator__operator" data-action="add">+</button>
-        <button class="calculator__operator" data-action="subtract">-</button>
-        <button class="calculator__operator" data-action="multiply">x</button>
-        <button class="calculator__operator" data-action="divide">÷</button>
-        <button class="calculator__number">7</button>
-        <button class="calculator__number">8</button>
-        <button class="calculator__number">9</button>
-        <button class="calculator__number">4</button>
-        <button class="calculator__number">5</button>
-        <button class="calculator__number">6</button>
-        <button class="calculator__number">1</button>
-        <button class="calculator__number">2</button>
-        <button class="calculator__number">3</button>
-        <button class="calculator__number">0</button>
-        <button data-action="calculator__decimal">.</button>
-        <button data-action="calculator__clear">AC</button>
-        <button class="calculator__equal" data-action="calculate">=</button>
-      </div>
+        <div class="calculator__head">
+            <h1>Calculadora, Hello Kitty💖 </h1>
+            <img class="logo" src="images/logohellokity.png" alt="sticker hello kitty" srcset="">
+        </div>
+        <div class="calculator__divDisplay">
+            <p class="calculator__display"></p>
+        </div><br>
+        <div class="calculator__keys">
+          <button id="power-button" class="power-button">on/off</button>
+          <button class="key--backspace" data-action="backspace">&#9003;</button>
+          <button class="clear" data-action="clear">AC</button>
+          <button class="key--operatorAdd">+</button>
+          <button class="key--operatorSub">-</button>
+          <button class="key--operatorMul">*</button>
+          <button class="key--operatorDiv">/</button>
+          <button class="key--number">7</button>
+          <button class="key--number">8</button>
+          <button class="key--number">9</button>
+          <button class="key--number">4</button>
+          <button class="key--number">5</button>
+          <button class="key--number">6</button>
+          <button class="key--number">1</button>
+          <button class="key--number">2</button>
+          <button class="key--number">3</button>
+          <button class="key--number">0</button>
+          <button class="decimal" data-action="decimal">.</button>
+          <button class="key--parenthesis init">(</button>
+          <button class="key--parenthesis final">)</button>
+          <button class="key--equal" data-action="calculate">=</button>
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
